@@ -1,10 +1,36 @@
+/* Globales */
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
+    width: 1440px;
+    height: 1024px;
     background: #F3F5FC;
+    display: block;
+}
+
+/* Header */
+
+header {
+    d
+}
+
+/** Main **/
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Section central */
+
+.zonaCentral {
+    display: flex;
+    max-width: 66%;
+    flex-direction: column;
 }
 
 .logo {
@@ -14,15 +40,12 @@ body {
     gap: 40px;
     width: 120px;
     height: 48px;
-    position: absolute;
-    top: 40px;
-    left: 40px;
+    margin: 2.5rem 5rem;
 }
 
-input {
+textarea {
     background-color: #F3F5FC;
     color: #0A3871;
-    position: absolute;
     width: 577px;
     height: 3rem;
     left: 240px;
@@ -32,24 +55,17 @@ input {
     font-size: 2rem;
     border: none;
     cursor: pointer;
+    margin: 6rem 15rem auto;
 }
 
-/* Rectangle 1 */
-
+/* Section Rectangulo */
 
 .rectangulo {
-
-    position: absolute;
+    margin-top: 2.5rem;
+    margin-right: 2.5rem;
     width: 400px;
     height: 944px;
-    left: 1000px;
-    top: 40px;
-
-    /* White */
-
     background: #FFFFFF;
-    /* shadow */
-
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
@@ -86,13 +102,12 @@ input {
     margin-top: 1rem;
 }
 
+/* botones */
+
 .botones {
-    position: absolute;
+    margin-left: 15rem;
     width: 680px;
     height: 67px;
-    left: 240px;
-    top: 885px;
-
 }
 
 button {
@@ -111,4 +126,12 @@ button {
 button:hover {
     background-color: #D8DFE8;
     color: #0A3871;
+}
+
+/* Footer */
+
+footer {
+    margin: 2rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
 }
