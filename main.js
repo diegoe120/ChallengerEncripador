@@ -1,49 +1,40 @@
-// La letra "a" es convertida para "ai"
-// La letra "e" es convertida para "enter"
-// La letra "i" es convertida para "imes"
-// La letra "o" es convertida para "ober"
-// La letra "u" es convertida para "ufat"
-const textArea = document.querySelector(".tex-area");
-const mensaje = document.querySelector('.mensaje');
+const textArea = document.querySelector(".text-area");
+const mensaje = document.querySelector(".mensaje");
 
 function btnEncriptar() {
-    const textoEncriptado = encriptador(textArea.value);
+    const textoEncriptado = encriptar(textArea.value);
+    mensaje.style.backgroundImage = 'none';
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundImage = none;
 }
 
 function btnDesencriptar() {
-    const textoEncriptado = desencriptador(textArea.value);
+    const textoEncriptado = desEncriptar(textArea.value);
+    mensaje.style.backgroundImage = 'none';
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundImage = none;
 }
 
-function encriptar(stringEmcriptado) {
-    let clave = [['a', 'ai'], ['e', 'enter'], ['i', 'imes'], ['o', 'ober'], ['u', 'ufat']];
-    stringEmcriptado = stringEmcriptado.toLowerCase();
+function encriptar(stringEncriptado) {
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    stringEncriptado = stringEncriptado.toLowerCase()
 
-    for (let i = 0; I < clave.length; i++) {
-        if (stringEmcriptado.include(clave[i][0])) {
-            stringEmcriptado = stringEmcriptado.replaceAll(clave[i][0], clave[i][1])
+    for (let i = 0; i < matrizCodigo.length; i++) {
+        if (stringEncriptado.includes(matrizCodigo[i][0])) {
+            stringEncriptado = stringEncriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
         }
     }
-
-    return stringEmcriptado;
-
+    return stringEncriptado;
 }
 
-function desencriptador(stringEmcriptado) {
-    let clave = [['a', 'ai'], ['e', 'enter'], ['i', 'imes'], ['o', 'ober'], ['u', 'ufat']];
-    stringEmcriptado = stringEmcriptado.toLowerCase();
+function desEncriptar(stringDesencriptado) {
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    stringDesencriptado = stringDesencriptado.toLowerCase()
 
-    for (let i = 0; I < clave.length; i++) {
-        if (stringEmcriptado.include(clave[i][1])) {
-            stringEmcriptado = stringEmcriptado.replaceAll(clave[i][1], clave[i][0])
+    for (let i = 0; i < matrizCodigo.length; i++) {
+        if (stringDesencriptado.includes(matrizCodigo[i][1])) {
+            stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
         }
     }
-
-    return stringEmcriptado;
-
+    return stringDesencriptado;
 }

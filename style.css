@@ -2,134 +2,110 @@
 * {
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    width: 1440px;
-    height: 1024px;
     background: #F3F5FC;
-    display: block;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
 }
-
-/* Header */
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    width: 120px;
-    height: 48px;
-    margin: 2.5rem 5rem;
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
 }
-
-/** Main **/
 
 main {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 80px;
 }
 
-/* Section central */
-
-.zonaCentral {
-    display: flex;
-    max-width: 66%;
-    flex-direction: column;
-}
-
-
-
-textarea {
-    background-color: #F3F5FC;
-    color: #0A3871;
-    width: 577px;
-    height: 3rem;
-    left: 240px;
-    top: 168px;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 2rem;
+.text-area {
     border: none;
-    cursor: pointer;
-    margin: 6rem 15rem auto;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
 }
 
-/* Section Rectangulo */
+::placeholder { color: #0a3871; }
+    .text-area:focus {
+        outline: none;
+    }
 
-.rectangulo {
-    margin-top: 2.5rem;
-    margin-right: 2.5rem;
-    width: 400px;
-    height: 944px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
-
-.muneco {
-
-    width: 336px;
-    height: 304px;
-    margin: 243px 32px 0;
-}
-
-.texto {
-    margin: 32px 32px 0;
-}
-
-.texto h1 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 120%;
-    text-align: center;
-    color: #343A40;
-}
-
-.texto p {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 150%;
-    text-align: center;
-    color: #495057;
-    margin-top: 1rem;
-}
-
-/* botones */
-
-.botones {
-    margin-left: 15rem;
-    width: 680px;
-    height: 67px;
-}
-
-button {
-    background-color: #0A3871;
+.mensaje {
+    background: white;
+    background-image: url(./img/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
     border-radius: 24px;
-    width: 328px;
-    height: 67px;
-    color: #ffffff;
-    font-size: 1rem;
-    text-align: center;
-    border: none;
+    color: #0a3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+botonoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background-color: #D8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
     cursor: pointer;
-    transition: 350ms;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+    transition: 1s;
 }
 
-button:hover {
-    background-color: #D8DFE8;
-    color: #0A3871;
+.btn-desencriptar:hover {
+    background-color: #0a3871;
+    color: #000;
 }
 
-/* Footer */
+.btn-encriptar {
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #F3F5FC;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    transition: 1s;
+}
 
-footer {
-    margin: 2rem;
-    line-height: 1.5rem;
-    font-size: 1rem;
+.btn-encriptar:hover {
+    background-color:#D8dfe8;
+    color: #0a3871;
+}
+
+.btn-copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    position: absolute;
+    margin-left: 108px;
+    margin-top: 402px;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
+
+footer p{
+    margin-left: 3rem;
+    font-size:medium;
 }

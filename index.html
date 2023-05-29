@@ -9,37 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Challenger Encriptador</title>
+    <title>Encriptador</title>
 </head>
 
 <body>
 
     <header>
-        <img src="./img/Logo.png" alt="logo alura" class="logo">
+        <img class="logo" src="./img/Logo.png" alt="logo alura">
     </header>
-
-
-    <main class="">
-
-        <section class="zonaCentral">
-            <textarea class="mensaje" cols="30" rows="10" autofocus required
-                placeholder="Ingrese el texto aqui"></textarea>
-
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
             <div class="botones">
-                <button onclick="{btnEncriptar()}" class="bnt-encriptador">Encriptar</button>
-                <button onclick="{btnDesencriptar()}" class="btn-desencritador">Desencriptar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
 
         <secttion class="rectangulo">
-            <img class="imagen" src="./img/Muñeco.png" alt="una persona con una lupa">
-            <div class="texto">
-                <textarea class="mensaje" col="20" rows="10"></textarea>
-                <button class="copiar">Copiar</button>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <div>
+                <button class="btn-copiar">Copiar</button>
             </div>
-
         </secttion>
-
     </main>
     <footer>
         <p>Proyecto Challenger Alura Desencriptador/Encriptador</p>
