@@ -4,27 +4,38 @@
     box-sizing: border-box;
     background: #F3F5FC;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.5rem;
     line-height: 150%;
 }
 
+body {
+    height: 1025px;
+    max-width: 1280px;
+}
+
+/* Header */
+
 .logo {
-    padding-top: 10px;
-    margin-left: 10px;
+    padding-top: 1rem;
+    margin-left: 2rem;
     width: 10%;
 }
 
+/* Main */
+
 main {
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
 }
+
+/* Sections */
 
 .text-area {
     border: none;
     color: #0a3871;
-    margin-top: 90px;
-    text-transform: lowercase;
+    margin-top: 3.5rem;
+    /* text-transform: lowercase; */
 }
 
 ::placeholder { color: #0a3871; }
@@ -32,27 +43,41 @@ main {
         outline: none;
     }
 
+    /* section Mensaje */
+
 .mensaje {
-    background: white;
+    
     background-image: url(./img/Muñeco.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background: white;
     border: none;
     border-radius: 24px;
     color: #0a3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
-
+    margin-top: 1.5rem;
+    padding-left: 1.5rem;
+    height: 55%;
 }
 
 .mensaje:focus {
     outline: none;
 }
 
+.zona-btn-copiar {
+display: flex;
+justify-content: center;
+}
+
+/* Buttons */
+
 botonoes {
     display: flex;
-    margin-top: 18px;
+    margin-top: 1rem;
+}
+
+button {
+    width: 11rem;
+    height: 2.5rem;
 }
 
 .btn-desencriptar {
@@ -61,9 +86,7 @@ botonoes {
     border-radius: 24px;
     color: #0a3871;
     cursor: pointer;
-    height: 67px;
-    width: 328px;
-    margin-left: 30px;
+    margin-left: 1.2rem;
     transition: 1s;
 }
 
@@ -78,8 +101,6 @@ botonoes {
     border-radius: 24px;
     color: #F3F5FC;
     cursor: pointer;
-    height: 67px;
-    width: 328px;
     transition: 1s;
 }
 
@@ -93,17 +114,16 @@ botonoes {
     border-radius: 24px;
     color: #0a3871;
     cursor: pointer;
-    height: 67px;
-    width: 336px;
-    position: absolute;
-    margin-left: 108px;
-    margin-top: 402px;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .informacion {
     color: #495057;
-    font-size: 18px;
+    font-size: .5rem;
 }
+
+/* Footer */
 
 footer p{
     margin-left: 3rem;
